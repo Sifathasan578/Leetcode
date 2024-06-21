@@ -24,7 +24,7 @@ vector<int> getRow(int rowIndex) {
     }
     return res[rowIndex];
 
-  // TC: O(n)
+  // TC: O(n ^ 2), Need to decrease complexity
   // Follow up: Could you optimize your algorithm to use only O(rowIndex) extra space?
 }
 
