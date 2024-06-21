@@ -26,7 +26,7 @@ int pivotIndex(vector<int>& nums) {
     }
     return -1;
 
-    // TC: O(n)   
+    // TC: O(n), Same as 1991
 }
 
 int main() {
