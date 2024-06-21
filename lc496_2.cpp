@@ -29,6 +29,8 @@ vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
     }
 
     return res;
+
+    // TC: o(n + m)
 }
 
 int main() {
