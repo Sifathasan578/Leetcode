@@ -11,6 +11,7 @@ bool isAnagram(string s, string t) {
     else return false;
 
     // TC: O(n logn), logn for sorting
+    // Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
 }
 
 int main() {
