@@ -25,6 +25,8 @@ int findMiddleIndex(vector<int>& nums) {
         sum += nums[i];
     }
     return -1;
+
+    // TC: O(n), same as: 724
 }
 
 int main() {
