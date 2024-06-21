@@ -20,6 +20,8 @@ bool isMonotonic(vector<int>& nums) {
     }
 
     return (ok or okk);
+
+    // TC: O(n)
 }
 
 int main() {
