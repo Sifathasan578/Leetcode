@@ -18,7 +18,7 @@ int majorityElement(vector<int>& nums) {
     }
     return res;
 
-    TC: O(n logn)
+    // TC: O(n logn)
 }
 
 int main() {
