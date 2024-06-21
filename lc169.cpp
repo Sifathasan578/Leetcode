@@ -20,6 +20,7 @@ int majorityElement(vector<int>& nums) {
 
     // TC: O(n logn)
     // TC: O(n), PENDING, Boyer-Moore Voting Algorithm
+    // Read This: https://www.geeksforgeeks.org/boyer-moore-majority-voting-algorithm/ 
 }
 
 int main() {
