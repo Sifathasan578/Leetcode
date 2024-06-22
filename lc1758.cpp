@@ -24,6 +24,8 @@ int minOperations(string s) {
     }
 
     return (int) min(res1, res2);
+
+    // TC: O(n)
 }
 
 int main() {
