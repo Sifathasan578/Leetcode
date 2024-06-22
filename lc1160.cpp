@@ -30,7 +30,7 @@ int countCharacters(vector<string>& words, string chars) {
         mp = mpp;
     }
     return res;
-
+    
     // TC: O(C+N⋅L), 
     // C: each characters in chars processing, 
     // N: each word processing
@@ -45,20 +45,5 @@ int main() {
         words.push_back(k);
     }
     string chars; cin >> chars;
-    cout << countCharacters(words, chars) << "\n";
-
-    // int n; cin >> n;
-    // vector<int> res = getRow(n);
-    // for (int i : res) {
-    //     cout << i << " ";
-    // }
-
-    // int n; cin >> n;
-    // vector<int> nums;
-    // for (int i = 0; i < n; i++) {
-    //     int k; cin >> k;
-    //     nums.push_back(k);
-    // }
-
-    // cout << numIdenticalPairs(nums) << "\n";
+    cout << countCharacters(words, chars) << "\n"
 }
