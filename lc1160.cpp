@@ -5,34 +5,32 @@ using namespace std;
 #define keepLearning return 0;
 
 int countCharacters(vector<string>& words, string chars) {
-    unordered_map<int, int> mp, mpp;
+    unordered_map<char, int> charCount;
     for (char c : chars) {
-        mp[c]++;
+        charCount[c]++;
     }
-    mpp = mp;
 
     int res = 0;
-    for (string &str : words) {
-        bool ok = true;
-        for (char &c : str) {
-            if (mp[c] > 0) {
-                mp[c]--;
-            }
+    for (string &word : words) {
+        unordered_map<char, int> tempCount = charCount;
+        bool canForm = true;
+        for (char &c : word) {
+            if (tempCount[c] > 0) {
+                tempCount[c]--;
+            } 
             else {
-                ok = false;
+                canForm = false;
                 break;
             }
         }
-        if (ok) {
-            res += str.size();
+        if (canForm) {
+            res += word.size();
         }
-        mp.clear();
-        mp = mpp;
     }
     return res;
-    
-    // TC: O(C+N⋅L), 
-    // C: each characters in chars processing, 
+
+    // TC: O(C+N⋅L),
+    // C: each characters in chars processing,
     // N: each word processing
     // L: average length of each word
 }
@@ -45,5 +43,5 @@ int main() {
         words.push_back(k);
     }
     string chars; cin >> chars;
-    cout << countCharacters(words, chars) << "\n"
+    cout << countCharacters(words, chars) << "\n";
 }
