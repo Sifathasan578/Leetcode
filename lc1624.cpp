@@ -6,11 +6,11 @@ using namespace std;
 
 int maxLengthBetweenEqualCharacters(string s) {
     int n = s.size();
-    map<char, pair<int, int>> mp;
+    unordered_map<char, pair<int, int>> mp;
     int res = -1;
     for (int i = 0; i < n; i++) {
         char c = s[i];
-        if (mp.find(c) == mp.end()) {
+        if (mp.find(c) == mp.end()) { // O(logn) -> O(1) As map will contain 26 char at most
             mp[c] = {i, i};
         }
         else {
@@ -19,6 +19,8 @@ int maxLengthBetweenEqualCharacters(string s) {
         res = max(res, mp[c].second - mp[c].first - 1);
     }
     return res;
+
+    // TC: O(n)
 }
 
 int main() {
