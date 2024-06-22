@@ -18,6 +18,8 @@ bool makeEqual(vector<string>& words) {
         if (it.second % n != 0) return false;
     }
     return true;
+
+    // TC: O(n * m)
 }
 
 int main() {
