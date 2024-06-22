@@ -17,6 +17,7 @@ int specialArray(vector<int>& nums) {
 
     // TC: O(n ^ 2)
     // O(nlogn) and O(n) possible
+    // Very very naive solution. Need to reduce complexity by a lot. 
 }
 
 int main() {
