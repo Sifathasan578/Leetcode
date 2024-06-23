@@ -19,6 +19,8 @@ int countStudents(vector<int>& students, vector<int>& sandwiches) {
         }
     }
     return 0;
+
+    // TC: O(n)
 }
 
 int main() {
