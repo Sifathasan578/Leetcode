@@ -18,7 +18,7 @@ vector<int> topKFrequent(vector<int>& nums, int k) {
     });
 
     vector<int> res;
-    for (int i = 0; i < vec.size() and k; i++, k--) {
+    for (int i = 0; i < vec.size() && k; i++, k--) {
         res.push_back(vec[i].first);
     }
 
