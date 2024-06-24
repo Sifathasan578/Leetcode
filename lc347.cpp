@@ -23,6 +23,9 @@ vector<int> topKFrequent(vector<int>& nums, int k) {
     }
 
     return res;
+
+    // TC: O(nlogn)
+    // Follow up: Better than O(nlogn)
 }
 
 int main() {
