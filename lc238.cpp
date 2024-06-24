@@ -33,6 +33,7 @@ vector<int> productExceptSelf(vector<int>& nums) {
     return res;
 
     // TC: O(n)
+    // Follow up: Can you solve the problem in O(1) extra space complexity? (The output array does not count as extra space for space complexity analysis.)
 }
 
 int main() {
@@ -42,7 +43,7 @@ int main() {
         cin >> nums[i];
     }
     vector<int> res = productExceptSelf(nums);
-    for (int i : res) {
+    for (int i: res) {
         cout << i << " ";
     }
 }
