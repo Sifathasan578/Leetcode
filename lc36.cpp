@@ -1,4 +1,11 @@
-for (int row = 0; row < 9; row++) {
+#include<bits/stdc++.h>
+using namespace std;
+
+#define deb(n)       cout<<#n<<" = "<<n<<"\n";
+#define keepLearning return 0;
+
+bool isValidSudoku(vector<vector<char>>& board) {
+    for (int row = 0; row < 9; row++) {
         map<char, int> mp;
         for (int col = 0; col < 9; col++) {
             if (board[row][col] >= '0' && board[row][col] <= '9') {
@@ -43,3 +50,16 @@ for (int row = 0; row < 9; row++) {
     }
 
     return true;
+}
+
+int main() {
+    int n; cin >> n;
+    vector<int> nums(n);
+    for (int i = 0; i < n; i++) {
+        cin >> nums[i];
+    }
+    vector<int> res = productExceptSelf(nums);
+    for (int i : res) {
+        cout << i << " ";
+    }
+}
