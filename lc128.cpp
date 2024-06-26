@@ -21,6 +21,8 @@ int longestConsecutive(vector<int>& nums) {
     res = max(res, cnt);
     if (n == 0) res = 0;
     return res;
+
+    // TC: O(nlogn)
 }
 
 int main() {
