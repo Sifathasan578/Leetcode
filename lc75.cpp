@@ -19,7 +19,7 @@ void sortColors(vector<int>& nums) {
     }
     
     // TC: O(n)
-    // TD: Dutch National Flag Algorithm by Edsger W
+    // TD: Dutch National Flag Algorithm by Edsger W: https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
 }
 
 int main() {
