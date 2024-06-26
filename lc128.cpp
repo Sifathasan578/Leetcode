@@ -23,6 +23,7 @@ int longestConsecutive(vector<int>& nums) {
     return res;
 
     // TC: O(nlogn)
+    // There is an O(n) solution: To-Do
 }
 
 int main() {
